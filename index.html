@@ -35,6 +35,14 @@
     <title>TÂM Y DUNG MASTER</title>
     <link rel="stylesheet" href="./css/landing.css?1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        window.crmLink = "https://crm.tamydung.com/?ff_landing=5";
+        // find button and update link crm
+        $(document).ready(function () {
+            $('.js-crm-link').attr('href', window.crmLink);
+        });
+
+    </script>
 
 </head>
 
@@ -44,7 +52,7 @@
             <header>
                 <div class="wrapper">
                     <h1 class="header-logo"><img width="150px" src="./img/main_logo.svg" alt="TÂM Y DUNG"></h1><a
-                        class="common-btn trans" href="https://crm.tamydung.com/?ff_landing=3">Đăng Ký</a>
+                        class="common-btn trans js-crm-link" href="https://crm.tamydung.com/?ff_landing=5">Đăng Ký</a>
                 </div>
             </header>
             <section class="section-keyvisual">
@@ -203,7 +211,8 @@
                 <div class="footer-slogan">
                     <div class="slogan-image"><img src="./img/slogan_img.svg?1"
                             alt="Hãy cho những ước mơ, hoài bão của bạn cơ hội trở thành hiện thực thông qua học tập, rèn luyện cùng TÂM Y DUNG">
-                    </div><a class="common-btn trans" href="https://crm.tamydung.com/?ff_landing=3">Đăng Ký</a>
+                    </div><a class="common-btn trans js-crm-link" href="https://crm.tamydung.com/?ff_landing=5">Đăng
+                        Ký</a>
                 </div>
             </div>
         </footer>
